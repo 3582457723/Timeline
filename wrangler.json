@@ -6,13 +6,14 @@
     "directory": "./public",
     "binding": "ASSETS"
   },
-  "kv_namespaces": [
+  "d1_databases": [
     {
-      "binding": "KV",
-      "id": "ff565310212a48159d1ca4190ad5f952",
-      
-      // Optional: preview_id used when running `wrangler dev` for local dev
-      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>
+      "binding": "DB",
+      "database_name": "chat_db",
+      "database_id": "ff565310212a48159d1ca4190ad5f952"
     }
-  ]
+  ],
+  "triggers": {
+    "crons": ["0 * * * *"]
+  }
 }
