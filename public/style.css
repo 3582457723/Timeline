@@ -1,6 +1,6 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #ddfff7;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -76,4 +76,35 @@ body {
 
 #send-btn:hover {
     background: #006dd6;
+}
+
+.fit-picture {
+  width: 50px;
+}
+
+.image-heading-container {
+  display: flex; /* 画像と見出しを横並びにする */
+  align-items: center; /* 上下の中央揃え */
+  gap: 0px; /* 画像とテキストの間の余白 */
+}
+
+.image-heading-container img {
+  width: 50px; /* 画像サイズの調整（お好みで変更） */
+  height: auto;
+}
+
+.image-heading-container h2 {
+  font-size: 2.25rem; /* 見出しの文字サイズの調整 */
+  margin: 0; /* h2要素特有の余白をリセット */
+}
+
+.page-logo {
+    border-radius: 80px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.dibox {
+    display: flex;
+    height: 80vh;
 }

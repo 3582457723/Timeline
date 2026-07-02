@@ -13,8 +13,8 @@ export default {
           return new Response("Bad Request", { status: 400 });
         }
 
-        // 有効期限（秒）を30秒〜3600秒の間に制限
-        const ttlSeconds = Math.max(30, Math.min(3600, parseInt(ttl)));
+        // 有効期限（秒）を1秒〜86400秒(1日)の間に制限
+        const ttlSeconds = Math.max(1, Math.min(86400, parseInt(ttl)));
         
         // 本文とTTLをJSON形式にまとめてmessageカラムに保存
         const textData = JSON.stringify({ body: message, ttl: ttlSeconds });

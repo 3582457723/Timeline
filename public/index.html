@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>消えるニックネームチャット</title>
+    <title>Timeline.net</title>
 </head>
 <body>
     <div id="chat-container">
         <div class="chat-header">
-            <h2>⏱️ Ephemeral Chat</h2>
+            <div class="image-heading-container">
+            <img src="images/logo.png" alt="Timelineロゴ">
+            <h2>Time Line</h2>
+            </div>
             <p>一定時間で自動消滅するチャットルーム</p>
         </div>
 
@@ -18,11 +21,19 @@
             <div class="ttl-wrapper">
                 <label for="ttl-select">消滅時間:</label>
                 <select id="ttl-select">
+                    <option value="1">1秒</option>
+                    <option value="5">5秒</option>
+                    <option value="10">10秒</option>
+                    <option value="20">20秒</option>
                     <option value="30">30秒</option>
                     <option value="60">1分</option>
                     <option value="300">5分</option>
                     <option value="1800">30分</option>
                     <option value="3600" selected>1時間</option>
+                    <option value="7200" selected>2時間</option>
+                    <option value="10800" selected>3時間</option>
+                    <option value="43200" selected>12時間</option>
+                    <option value="86400" selected>1日</option>
                 </select>
             </div>
         </div>
@@ -37,6 +48,9 @@
                 <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
             </button>
         </div>
+        <hr>
+        <div>
+            <h4 style=" color:#00FFCF; text-align:center;"">Copyright 2026 Altice-Works Co. Ltd. All right reserved.</h4></div>
     </div>
     <script src="app.js"></script>
 </body>
