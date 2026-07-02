@@ -1,0 +1,18 @@
+{
+  "name": "timeline",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-02",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "ff565310212a48159d1ca4190ad5f952",
+      
+      // Optional: preview_id used when running `wrangler dev` for local dev
+      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>
+    }
+  ]
+}
