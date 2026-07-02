@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta http-equiv="refresh" content=5; url="https://timeline.y20183033.workers.dev/public/">
         <title>Redilecting</title>
+        <style>
+            html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* 左右の中央揃え */
+  align-items: center;     /* 上下の中央揃え */
+  height: 100vh;           /* 画面の高さ100%を指定 */
+}
+
+.center-box {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+        </style>
     </head>
     <body>
-        Redilecting page...
+        <div class="container">
+            <div class="center-box">
+                <button id="send-btn" onclick="location.href(public/index.html)">HOME</button>
+             </div>
+        </div>
     </body>
 </html>
