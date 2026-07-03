@@ -1,9 +1,9 @@
 {
   "name": "timeline",
-  "main": "src/index.js",
+  "main": "index.js",
   "compatibility_date": "2026-07-02",
   "assets": {
-    "directory": "./public",
+    "directory": "./",
     "binding": "ASSETS"
   },
   "d1_databases": [
